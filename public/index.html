@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    
+</head>
+<body>
+    <h3>real time chat app</h3>
+    <div id="loginDiv">
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password">
+    <button id="login">LOGIN</button>
+    </div>
+
+    <div id="msgDiv" style="display: none;">
+        <input type="text" id="sendTo" placeholder="send to (default everyone)">
+        <input type="text" id="inpMsg" placeholder="message you want to send">
+        <button id="btnSend"> SEND</button>
+        <ul id="msgList"></ul>
+    </div>
+</body>
+</html>
